@@ -1,0 +1,19 @@
+
+<div class="container">
+  <!-- Heading -->
+  <h1>Delicious cocktails</h1>
+
+  <!-- Grid row -->
+  <% @cocktails.each do |cocktail| %>
+  <div class="col-xs-12 col-sm-4">
+    <%= link_to cocktail.name, cocktail  %>
+  </div>
+  <% end %>
+  <!-- Add button -->
+
+  <%= link_to "Add your cocktail", new_cocktail_path, {class: "btn btn-primary"} %>
+</div>
+<div>
+
+  <!-- Close main div -->
+</div>
